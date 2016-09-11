@@ -1,0 +1,132 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+body{
+	background-color: #fafafa;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#container:after, #wrapper:after {
+	clear: both;
+	content: " ";
+	display: block;
+}
+
+#wrapper{
+	width: 736px;
+	margin: 0 auto;
+}
+
+#wrapper > div{
+	float: left;
+}
+
+#container {
+	max-width: 490px;
+	min-width: 200px;
+	margin: 0 auto;
+	cursor: url(red.png);
+	box-shadow: 38px 39px 40px 6px #dadada;
+}
+
+.column {
+	float: left;
+}
+
+.cell {
+
+	height: 70px;
+	width: 70px;
+	text-align: center;
+	background: center;
+	background-size: cover;
+}
+
+input{
+	display: block;
+	width: 200px;
+	margin: 10px auto 20px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 18px;
+	background-color: #ccc;
+}
+
+input:hover{
+	background-color: #444;
+	color: white;
+}
+
+header{
+	margin: 0 auto;
+	width: 95%;
+}
+
+header img{
+	display: block;
+	margin: 0 auto;
+	width: 65%;
+}
+
+p{
+	width: 400px;
+	margin: 10px auto;
+	font-size: 18px;
+	
+	text-align: center;
+}
+
+#goRed{
+	color: red;
+	margin-right: 20px;
+	font-size: 24px;
+}
+
+#goBlack{
+	color: black;
+	margin-left: 20px;
+	font-size: 24px;
+	opacity: 0.2;
+}
+
+@media screen and (max-width: 736px){
+	.blueSides{
+		display: none;
+	}
+
+	#wrapper{
+		width: 490px;
+	}
+
+	header img{
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 490px){
+	#wrapper{
+		width: 350px;
+	}
+
+	#container{
+		box-shadow: none;
+	}
+
+	.cell{
+		width: 50px;
+		height: 50px;
+	}
+
+	p{
+		width: 315px;
+		font-size: 16px;
+	}
+
+	header{
+		margin-top: 15px;
+	}
+}

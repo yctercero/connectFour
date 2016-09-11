@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Connect Four</title>
+	<meta charset="utf-8"/>
+	<meta name="author" content="Yara C. Tercero"/>
+	<meta name="description" content="Two player connect four game."/>
+	<link rel="stylesheet" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'/>
+</head>
+
+<body>
+	<header><img src="Connect-Four.png"/> </header>
+	<p>Click on a column to drop the chip. To win, connect 4 of your pieces vertically, horizontally, or diagonally. Red begins.</p>
+	<input type="button" value = "Start a new game" onclick="history.go(0)" />
+	<div id="wrapper">
+		<div><img src="blueSides.png" alt=""></div>
+		<div id="container"></div>
+		<div><img src="blueSidesRight.png" alt=""></div>
+	</div>
+		
+	<script type="text/javascript" src="board-object.js"></script>
+</body>
+</html>
